@@ -15,7 +15,7 @@ print "Downloading 3DS firmware from the CDN..."
 if os.path.isdir(firmdir):
 	shutil.rmtree(firmdir)
 os.mkdir(firmdir)
-f(0x0004013800000002, 0x00000049)
+f(0x0004013800000002, 0x0000005C)
 f(0x0004013800000202, 0x0000000B)
 f(0x0004013800000102, 0x00000016)
 print "Downloaded!"

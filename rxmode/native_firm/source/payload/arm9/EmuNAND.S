@@ -21,9 +21,9 @@ nandHook:
 	ldr	r7, [lr, #-1]
 	ldmib	r0, {r5-r6}
 #ifdef PLATFORM_KTR
-	ldr	r4, =0x080D86F0
+	ldr	r4, =0x080F0AF0
 #else
-	ldr	r4, =0x080D8670
+	ldr	r4, =0x080D8A70
 #endif
 	cmp	r5, r4
 	beq	loc_801A310
