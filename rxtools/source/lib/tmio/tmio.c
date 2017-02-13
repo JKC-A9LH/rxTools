@@ -290,7 +290,7 @@ uint32_t tmio_init_dev(enum tmio_dev_id target) {
 		(error = tmio_wait_respend())
 	) return error;
 	dev->CSD = REG_MMC_RESP.CSD;
-	setckl(dev->clk = TMIO_CLK_DIV_2);
+	setckl(dev->clk = TMIO_CLK_DIV_4);
 	
 	tmio_send_command(MMC_SELECT_CARD | TMIO_CMD_RESP_R1, dev->RCA, 0);
 
